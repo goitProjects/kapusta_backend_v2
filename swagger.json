@@ -11,7 +11,7 @@
   },
   "consumes": ["application/json", "multipart/form-data"],
   "produces": ["application/json"],
-  "servers": [],
+  "servers": [{ "url": "https://kapusta-backend.goit.global" }],
   "tags": [
     {
       "name": "Auth",
