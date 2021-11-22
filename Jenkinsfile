@@ -50,9 +50,9 @@ node("nodejs"){
 
         if (success) {
             catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-                sh "cp /root/keys/index.ts /root/slave_jenkins/workspace/Build\ Kapusta-backend/src/gcp-config/index.ts"
-                sh "cp /root/keys/keys.json /root/slave_jenkins/workspace/Build\ Kapusta-backend/src/gcp-config/keys.json"
-                sh "cp /root/keys/kapusta-backend/.env /slave_jenkins/workspace/Build\ Kapusta-backend/.env"
+                sh '''cp /root/keys/index.ts /root/slave_jenkins/workspace/Build-Kapusta-backend/src/gcp-config/index.ts'''
+                sh "cp /root/keys/keys.json /root/slave_jenkins/workspace/Build-Kapusta-backend/src/gcp-config/keys.json"
+                sh "cp /root/keys/kapusta-backend/.env /slave_jenkins/workspace/Build-Kapusta-backend/.env"
             }
         }
     }
